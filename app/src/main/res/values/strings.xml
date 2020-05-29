@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">MisProductos</string>
+    <string name="app_name">Mis Productos</string>
+    <string name="manillas_de_alta_calidad">Manillas de alta calidad</string>
+    <string name="material">Material</string>
+    <string name="dije">Dije</string>
+    <string name="tipo">Tipo</string>
+    <string name="calcular">Calcular</string>
+    <string name="us">US $</string>
+    <string name="cop">COP $</string>
 </resources>

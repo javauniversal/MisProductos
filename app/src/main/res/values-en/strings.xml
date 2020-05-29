@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My products</string>
+    <string name="manillas_de_alta_calidad">high-quality handles</string>
+    <string name="material">Material</string>
+    <string name="dije">Said</string>
+    <string name="tipo">Type</string>
+</resources>
