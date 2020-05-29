@@ -7,4 +7,13 @@
     <string name="calcular">Calcular</string>
     <string name="us">US $</string>
     <string name="cop">COP $</string>
+    <string name="leather">Cuero</string>
+    <string name="rope">Cuerda</string>
+    <string name="hammer">Martillo</string>
+    <string name="anchor">Ancla</string>
+    <string name="gold">Oro</string>
+    <string name="gold_bath">"Baño de Oro "</string>
+    <string name="pink_gold">"Oro Rosado "</string>
+    <string name="silver">Plata</string>
+    <string name="nickel">Níquel</string>
 </resources>

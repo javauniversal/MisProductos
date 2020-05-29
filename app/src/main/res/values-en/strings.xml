@@ -5,4 +5,16 @@
     <string name="material">Material</string>
     <string name="dije">Said</string>
     <string name="tipo">Type</string>
+    <string name="calcular">Calculate</string>
+    <string name="us">US $</string>
+    <string name="cop">COP $</string>
+    <string name="leather">Leather</string>
+    <string name="rope">Rope</string>
+    <string name="hammer">Hammer</string>
+    <string name="anchor">Anchor</string>
+    <string name="gold">Gold</string>
+    <string name="gold_bath">Gold Bath</string>
+    <string name="pink_gold">Pink Gold</string>
+    <string name="silver">Silver</string>
+    <string name="nickel">Nickel</string>
 </resources>

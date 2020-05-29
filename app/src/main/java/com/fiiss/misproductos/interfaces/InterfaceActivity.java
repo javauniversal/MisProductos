@@ -1,22 +1,36 @@
 package com.fiiss.misproductos.interfaces;
 
+import com.fiiss.misproductos.entities.Material;
+import com.fiiss.misproductos.entities.Said;
+import com.fiiss.misproductos.entities.Type;
+import com.fiiss.misproductos.view.ListProduct;
+
+import java.util.List;
+
 public interface InterfaceActivity {
 
     interface View {
-        //void respuestaTokenUsuarioView(UsuarioApp usuarioApp);
-        //void respuestaTolenErrorView(String data);
+        void responseMaterialView(List<Material> materialList);
+        void responseSaidView(List<Said> saidList);
+        void responseTypeView(List<Type> typeList);
     }
 
     interface Model {
-        //void getTokenUsuarioModel(UsuarioApp usuarioApp, ServiceRestApp serviceRestApp);
-        //void getUsuarioModel(UsuarioApp usuarioApp, ServiceRestApp serviceRestApp);
+        void getMaterial(ListProduct listProduct);
+        void getSaid(ListProduct listProduct);
+        void getType(ListProduct listProduct);
     }
 
     interface Presenter {
-        //void getTokenUsuarioPresenter(UsuarioApp usuarioApp, ServiceRestApp serviceRestApp);
-        //void respuestaTokenPresenter(UsuarioApp usuarioApp);
-        ///void respuestaErrorTokenPresenter(String data);
-        //void getUsuarioPresenter(UsuarioApp usuarioApp, ServiceRestApp serviceRestApp);
+        void setDataMaterial(ListProduct listProduct);
+        void setDataSaid(ListProduct listProduct);
+        void setDataType(ListProduct listProduct);
+
+        void getMaterialPresenter(List<Material> materialList);
+        void getSaidPresenter(List<Said> saidList);
+        void getTypePresenter(List<Type> typeList);
+
+        void validateFields();
     }
 
 }
