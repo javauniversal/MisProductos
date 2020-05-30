@@ -1,6 +1,7 @@
 package com.fiiss.misproductos.presenter;
 
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -13,16 +14,19 @@ import com.fiiss.misproductos.interfaces.InterfaceActivity;
 import com.fiiss.misproductos.model.ModelActivity;
 import com.fiiss.misproductos.view.ListProduct;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class PresenterActivity implements InterfaceActivity.Presenter {
 
     private InterfaceActivity.View activityView;
     private InterfaceActivity.Model activityModel;
+    private DecimalFormat format;
 
     public PresenterActivity(InterfaceActivity.View activityView) {
         this.activityView = activityView;
         activityModel = new ModelActivity(this);
+        format = new DecimalFormat("#,###.##");
     }
 
     @Override
@@ -104,11 +108,12 @@ public class PresenterActivity implements InterfaceActivity.Presenter {
         }
     }
 
+    @SuppressLint("DefaultLocale")
     private String valueEnd(boolean cop, boolean us, double valor, int quantity) {
         if (cop) {
-            return String.format("COP$ %1s", (valor*quantity)*3200);
+            return String.format("COP $%1s", format.format((valor*quantity)*3200));
         } else if (us) {
-            return String.format("US$ %1s", valor*quantity);
+            return String.format("US $%1s", format.format(valor*quantity));
         }
 
         return "";

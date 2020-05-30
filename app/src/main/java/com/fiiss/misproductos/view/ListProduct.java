@@ -154,10 +154,10 @@ public class ListProduct extends AppCompatActivity implements InterfaceActivity.
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        if (checkedId == R.id.rbCOP) {
+        /*if (checkedId == R.id.rbCOP) {
             // Toast.makeText(this, "Ha pulsado el botón 1", Toast.LENGTH_LONG).show();
         } else if (checkedId == R.id.rbUS) {
             // Toast.makeText(this, "Ha pulsado el botón 2", Toast.LENGTH_LONG).show();
-        }
+        }*/
     }
 }
