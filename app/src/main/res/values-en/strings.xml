@@ -17,4 +17,6 @@
     <string name="pink_gold">Pink Gold</string>
     <string name="silver">Silver</string>
     <string name="nickel">Nickel</string>
+    <string name="quantuty">Quantity</string>
+    <string name="file_required">Required field</string>
 </resources>

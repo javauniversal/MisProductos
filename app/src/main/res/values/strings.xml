@@ -16,4 +16,6 @@
     <string name="pink_gold">"Oro Rosado "</string>
     <string name="silver">Plata</string>
     <string name="nickel">Níquel</string>
+    <string name="quantuty">Cantidad</string>
+    <string name="file_required">Campo requerido</string>
 </resources>

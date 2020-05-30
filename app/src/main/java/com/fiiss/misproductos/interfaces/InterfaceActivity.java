@@ -1,5 +1,8 @@
 package com.fiiss.misproductos.interfaces;
 
+import android.app.Activity;
+import android.widget.EditText;
+
 import com.fiiss.misproductos.entities.Material;
 import com.fiiss.misproductos.entities.Said;
 import com.fiiss.misproductos.entities.Type;
@@ -13,6 +16,8 @@ public interface InterfaceActivity {
         void responseMaterialView(List<Material> materialList);
         void responseSaidView(List<Said> saidList);
         void responseTypeView(List<Type> typeList);
+        void responseValidateFileView(Boolean validate);
+        void responseTotal(String resut);
     }
 
     interface Model {
@@ -30,7 +35,10 @@ public interface InterfaceActivity {
         void getSaidPresenter(List<Said> saidList);
         void getTypePresenter(List<Type> typeList);
 
-        void validateFields();
+        void validateFields(EditText editText);
+        void hideKeyboard(Activity activity);
+
+        void calculateProduct(int material, int Said, int type, boolean cop, boolean us, int quantity);
     }
 
 }
